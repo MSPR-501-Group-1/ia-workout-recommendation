@@ -1,0 +1,682 @@
+[
+  {
+    "id": "push_up",
+    "name": "Pompes",
+    "muscle_group": "Pectoraux",
+    "equipment": "none",
+    "programs": ["hiit_fat_loss","bodyweight_strength","bodyweight_upper_focus","upper_cardio_circuit","strength_cardio_hybrid","mixed_health_maintenance"],
+    "forbidden_injuries": ["shoulder_moderate","shoulder_severe","wrist_moderate","wrist_severe"],
+    "levels": {"beginner": {"rep":8,"serie":2,"repos":60},"intermediate": {"rep":12,"serie":3,"repos":60},"advanced": {"rep":20,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "bench_press",
+    "name": "Développé couché",
+    "muscle_group": "Pectoraux",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","full_body_strength_gym","upper_body_strength_gym","dumbbell_hypertrophy","strength_cardio_hybrid"],
+    "forbidden_injuries": ["shoulder_moderate","shoulder_severe","wrist_moderate","wrist_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":90},"intermediate": {"rep":8,"serie":4,"repos":90},"advanced": {"rep":6,"serie":5,"repos":120}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.3}}
+  },
+  {
+    "id": "incline_dumbbell_press",
+    "name": "Développé incliné haltères",
+    "muscle_group": "Pectoraux",
+    "equipment": "dumbbells",
+    "programs": ["ppl_split_gym","dumbbell_hypertrophy","upper_body_strength_gym"],
+    "forbidden_injuries": ["shoulder_moderate","shoulder_severe","wrist_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":75},"intermediate": {"rep":10,"serie":4,"repos":75},"advanced": {"rep":8,"serie":4,"repos":90}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.1,"serie_mult":1.2}}
+  },
+  {
+    "id": "cable_fly",
+    "name": "Écartés poulie",
+    "muscle_group": "Pectoraux",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","upper_body_strength_gym"],
+    "forbidden_injuries": ["shoulder_severe","wrist_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":60},"intermediate": {"rep":12,"serie":3,"repos":60},"advanced": {"rep":15,"serie":4,"repos":60}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "dips",
+    "name": "Dips",
+    "muscle_group": "Pectoraux",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","upper_body_strength_gym","bodyweight_upper_focus","hiit_fat_loss","strength_cardio_hybrid"],
+    "forbidden_injuries": ["shoulder_moderate","shoulder_severe","wrist_moderate","wrist_severe"],
+    "levels": {"beginner": {"rep":6,"serie":2,"repos":90},"intermediate": {"rep":10,"serie":3,"repos":75},"advanced": {"rep":15,"serie":4,"repos":60}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "decline_push_up",
+    "name": "Pompes déclinées",
+    "muscle_group": "Pectoraux",
+    "equipment": "none",
+    "programs": ["bodyweight_strength","bodyweight_upper_focus","hiit_fat_loss"],
+    "forbidden_injuries": ["shoulder_moderate","shoulder_severe","wrist_moderate","wrist_severe"],
+    "levels": {"beginner": {"rep":6,"serie":2,"repos":60},"intermediate": {"rep":10,"serie":3,"repos":60},"advanced": {"rep":15,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "pull_up",
+    "name": "Tractions",
+    "muscle_group": "Dos",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","upper_body_strength_gym","bodyweight_upper_focus","bodyweight_strength","upper_cardio_circuit","strength_cardio_hybrid"],
+    "forbidden_injuries": ["shoulder_severe","wrist_moderate","wrist_severe"],
+    "levels": {"beginner": {"rep":5,"serie":2,"repos":90},"intermediate": {"rep":8,"serie":3,"repos":90},"advanced": {"rep":12,"serie":4,"repos":75}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "bent_over_row",
+    "name": "Rowing barre",
+    "muscle_group": "Dos",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","full_body_strength_gym","upper_body_strength_gym"],
+    "forbidden_injuries": ["back_moderate","back_severe","wrist_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":90},"intermediate": {"rep":8,"serie":4,"repos":90},"advanced": {"rep":6,"serie":5,"repos":120}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.3}}
+  },
+  {
+    "id": "lat_pulldown",
+    "name": "Tirage poulie haute",
+    "muscle_group": "Dos",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","full_body_strength_gym","upper_body_strength_gym","mixed_health_maintenance","strength_cardio_hybrid"],
+    "forbidden_injuries": ["shoulder_severe","wrist_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":75},"intermediate": {"rep":10,"serie":4,"repos":75},"advanced": {"rep":10,"serie":4,"repos":60}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "dumbbell_row",
+    "name": "Rowing haltère unilatéral",
+    "muscle_group": "Dos",
+    "equipment": "dumbbells",
+    "programs": ["dumbbell_hypertrophy","upper_body_strength_gym","mixed_health_maintenance","upper_cardio_circuit"],
+    "forbidden_injuries": ["back_severe","wrist_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":60},"intermediate": {"rep":12,"serie":3,"repos":60},"advanced": {"rep":12,"serie":4,"repos":60}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "resistance_row",
+    "name": "Rowing élastique",
+    "muscle_group": "Dos",
+    "equipment": "resistance_bands",
+    "programs": ["mixed_health_maintenance","low_impact_active_recovery","gentle_mobility_walk","cardiac_rehab_walking"],
+    "forbidden_injuries": ["shoulder_severe"],
+    "levels": {"beginner": {"rep":12,"serie":2,"repos":60},"intermediate": {"rep":15,"serie":3,"repos":60},"advanced": {"rep":20,"serie":3,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "deadlift",
+    "name": "Soulevé de terre",
+    "muscle_group": "Dos",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","full_body_strength_gym","strength_cardio_hybrid"],
+    "forbidden_injuries": ["back_moderate","back_severe","knee_severe"],
+    "levels": {"beginner": {"rep":8,"serie":3,"repos":120},"intermediate": {"rep":6,"serie":4,"repos":120},"advanced": {"rep":5,"serie":5,"repos":180}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.6},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.2}}
+  },
+  {
+    "id": "seated_cable_row",
+    "name": "Tirage poulie basse assis",
+    "muscle_group": "Dos",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","upper_body_strength_gym","upper_body_endurance_rowing"],
+    "forbidden_injuries": ["back_severe","wrist_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":75},"intermediate": {"rep":10,"serie":4,"repos":75},"advanced": {"rep":10,"serie":4,"repos":60}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "overhead_press",
+    "name": "Développé militaire",
+    "muscle_group": "Épaules",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","full_body_strength_gym","upper_body_strength_gym"],
+    "forbidden_injuries": ["shoulder_moderate","shoulder_severe","wrist_moderate","wrist_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":90},"intermediate": {"rep":8,"serie":4,"repos":90},"advanced": {"rep":6,"serie":5,"repos":120}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.3}}
+  },
+  {
+    "id": "lateral_raise",
+    "name": "Élévations latérales",
+    "muscle_group": "Épaules",
+    "equipment": "dumbbells",
+    "programs": ["dumbbell_hypertrophy","upper_body_strength_gym","mixed_health_maintenance","upper_cardio_circuit"],
+    "forbidden_injuries": ["shoulder_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":60},"intermediate": {"rep":15,"serie":3,"repos":60},"advanced": {"rep":15,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "face_pull",
+    "name": "Face pull poulie",
+    "muscle_group": "Épaules",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","upper_body_strength_gym","mixed_health_maintenance","low_impact_active_recovery"],
+    "forbidden_injuries": ["shoulder_severe","wrist_severe"],
+    "levels": {"beginner": {"rep":15,"serie":3,"repos":60},"intermediate": {"rep":15,"serie":3,"repos":60},"advanced": {"rep":20,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "band_shoulder_press",
+    "name": "Développé épaules élastique",
+    "muscle_group": "Épaules",
+    "equipment": "resistance_bands",
+    "programs": ["mixed_health_maintenance","low_impact_active_recovery","cardiac_rehab_walking"],
+    "forbidden_injuries": ["shoulder_moderate","shoulder_severe"],
+    "levels": {"beginner": {"rep":12,"serie":2,"repos":60},"intermediate": {"rep":15,"serie":3,"repos":60},"advanced": {"rep":20,"serie":3,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "arnold_press",
+    "name": "Arnold press haltères",
+    "muscle_group": "Épaules",
+    "equipment": "dumbbells",
+    "programs": ["dumbbell_hypertrophy","upper_body_strength_gym"],
+    "forbidden_injuries": ["shoulder_moderate","shoulder_severe","wrist_moderate","wrist_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":75},"intermediate": {"rep":10,"serie":4,"repos":75},"advanced": {"rep":12,"serie":4,"repos":60}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "bicep_curl",
+    "name": "Curl biceps haltères",
+    "muscle_group": "Biceps",
+    "equipment": "dumbbells",
+    "programs": ["ppl_split_gym","dumbbell_hypertrophy","upper_body_strength_gym","upper_cardio_circuit"],
+    "forbidden_injuries": ["wrist_moderate","wrist_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":60},"intermediate": {"rep":12,"serie":4,"repos":60},"advanced": {"rep":15,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "hammer_curl",
+    "name": "Curl marteau",
+    "muscle_group": "Biceps",
+    "equipment": "dumbbells",
+    "programs": ["ppl_split_gym","dumbbell_hypertrophy","upper_body_strength_gym"],
+    "forbidden_injuries": ["wrist_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":60},"intermediate": {"rep":12,"serie":3,"repos":60},"advanced": {"rep":15,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "resistance_curl",
+    "name": "Curl biceps élastique",
+    "muscle_group": "Biceps",
+    "equipment": "resistance_bands",
+    "programs": ["mixed_health_maintenance","low_impact_active_recovery","cardiac_rehab_walking"],
+    "forbidden_injuries": ["wrist_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":60},"intermediate": {"rep":15,"serie":3,"repos":60},"advanced": {"rep":20,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "concentration_curl",
+    "name": "Curl concentration assis",
+    "muscle_group": "Biceps",
+    "equipment": "dumbbells",
+    "programs": ["dumbbell_hypertrophy"],
+    "forbidden_injuries": ["wrist_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":60},"intermediate": {"rep":12,"serie":3,"repos":60},"advanced": {"rep":15,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "tricep_pushdown",
+    "name": "Tirage triceps poulie",
+    "muscle_group": "Triceps",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","upper_body_strength_gym"],
+    "forbidden_injuries": ["wrist_moderate","wrist_severe","shoulder_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":60},"intermediate": {"rep":12,"serie":4,"repos":60},"advanced": {"rep":15,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "tricep_overhead_ext",
+    "name": "Extension triceps au-dessus tête",
+    "muscle_group": "Triceps",
+    "equipment": "dumbbells",
+    "programs": ["dumbbell_hypertrophy","upper_body_strength_gym"],
+    "forbidden_injuries": ["shoulder_moderate","shoulder_severe","wrist_moderate","wrist_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":60},"intermediate": {"rep":12,"serie":3,"repos":60},"advanced": {"rep":15,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "close_grip_bench",
+    "name": "Développé serré triceps",
+    "muscle_group": "Triceps",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","upper_body_strength_gym"],
+    "forbidden_injuries": ["shoulder_moderate","shoulder_severe","wrist_moderate","wrist_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":75},"intermediate": {"rep":10,"serie":4,"repos":75},"advanced": {"rep":8,"serie":5,"repos":90}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.3}}
+  },
+  {
+    "id": "tricep_dip_bench",
+    "name": "Dips triceps sur banc",
+    "muscle_group": "Triceps",
+    "equipment": "none",
+    "programs": ["bodyweight_upper_focus","bodyweight_strength","upper_cardio_circuit"],
+    "forbidden_injuries": ["shoulder_moderate","shoulder_severe","wrist_moderate","wrist_severe"],
+    "levels": {"beginner": {"rep":8,"serie":2,"repos":75},"intermediate": {"rep":12,"serie":3,"repos":60},"advanced": {"rep":15,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "squat",
+    "name": "Squat",
+    "muscle_group": "Quadriceps",
+    "equipment": "none",
+    "programs": ["bodyweight_strength","bodyweight_lower_focus","hiit_fat_loss","strength_cardio_hybrid","mixed_health_maintenance","run_walk_progression"],
+    "forbidden_injuries": ["knee_moderate","knee_severe","ankle_severe","back_severe"],
+    "levels": {"beginner": {"rep":15,"serie":3,"repos":75},"intermediate": {"rep":15,"serie":4,"repos":75},"advanced": {"rep":20,"serie":4,"repos":60}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "barbell_squat",
+    "name": "Squat barre",
+    "muscle_group": "Quadriceps",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","full_body_strength_gym","lower_body_strength_gym"],
+    "forbidden_injuries": ["knee_moderate","knee_severe","back_moderate","back_severe","ankle_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":120},"intermediate": {"rep":8,"serie":4,"repos":120},"advanced": {"rep":6,"serie":5,"repos":150}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.6},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.3}}
+  },
+  {
+    "id": "leg_press",
+    "name": "Presse à cuisses",
+    "muscle_group": "Quadriceps",
+    "equipment": "gym",
+    "programs": ["lower_body_strength_gym","full_body_strength_gym","mixed_health_maintenance"],
+    "forbidden_injuries": ["knee_severe","back_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":90},"intermediate": {"rep":10,"serie":4,"repos":90},"advanced": {"rep":10,"serie":4,"repos":75}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "lunge",
+    "name": "Fentes",
+    "muscle_group": "Quadriceps",
+    "equipment": "none",
+    "programs": ["bodyweight_lower_focus","bodyweight_strength","hiit_fat_loss","mixed_health_maintenance","lower_body_strength_gym"],
+    "forbidden_injuries": ["knee_moderate","knee_severe","ankle_moderate","ankle_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":75},"intermediate": {"rep":12,"serie":3,"repos":60},"advanced": {"rep":15,"serie":4,"repos":60}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "goblet_squat",
+    "name": "Goblet squat haltère",
+    "muscle_group": "Quadriceps",
+    "equipment": "dumbbells",
+    "programs": ["dumbbell_hypertrophy","bodyweight_lower_focus","strength_cardio_hybrid","mixed_health_maintenance"],
+    "forbidden_injuries": ["knee_severe","wrist_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":75},"intermediate": {"rep":15,"serie":3,"repos":60},"advanced": {"rep":20,"serie":4,"repos":60}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "resistance_squat",
+    "name": "Squat élastique",
+    "muscle_group": "Quadriceps",
+    "equipment": "resistance_bands",
+    "programs": ["mixed_health_maintenance","low_impact_active_recovery","cardiac_rehab_walking"],
+    "forbidden_injuries": ["knee_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":60},"intermediate": {"rep":15,"serie":3,"repos":60},"advanced": {"rep":20,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "jump_squat",
+    "name": "Squats sautés",
+    "muscle_group": "Quadriceps",
+    "equipment": "none",
+    "programs": ["hiit_fat_loss","cardio_endurance_intervals","cardio_fat_burn"],
+    "forbidden_injuries": ["knee_moderate","knee_severe","ankle_moderate","ankle_severe","back_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":75},"intermediate": {"rep":15,"serie":3,"repos":60},"advanced": {"rep":20,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.5,"serie_mult":0.6},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "wall_sit",
+    "name": "Chaise murale",
+    "muscle_group": "Quadriceps",
+    "equipment": "none",
+    "programs": ["low_impact_active_recovery","mixed_health_maintenance","bodyweight_lower_focus","run_walk_progression"],
+    "forbidden_injuries": ["knee_severe"],
+    "levels": {"beginner": {"rep":20,"serie":2,"repos":60},"intermediate": {"rep":40,"serie":3,"repos":60},"advanced": {"rep":60,"serie":3,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "box_step_up",
+    "name": "Montées sur box",
+    "muscle_group": "Quadriceps",
+    "equipment": "none",
+    "programs": ["cardio_fat_burn","cardio_endurance_intervals","hiit_fat_loss","mixed_health_maintenance","lower_body_strength_gym"],
+    "forbidden_injuries": ["knee_severe","ankle_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":60},"intermediate": {"rep":15,"serie":3,"repos":45},"advanced": {"rep":20,"serie":4,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "hip_thrust",
+    "name": "Hip Thrust",
+    "muscle_group": "Fessiers",
+    "equipment": "gym",
+    "programs": ["lower_body_strength_gym","ppl_split_gym","full_body_strength_gym","mixed_health_maintenance"],
+    "forbidden_injuries": ["back_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":75},"intermediate": {"rep":12,"serie":4,"repos":75},"advanced": {"rep":15,"serie":4,"repos":60}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "glute_bridge",
+    "name": "Pont fessier",
+    "muscle_group": "Fessiers",
+    "equipment": "none",
+    "programs": ["bodyweight_lower_focus","bodyweight_strength","low_impact_active_recovery","mixed_health_maintenance","gentle_mobility_walk","cardiac_rehab_walking"],
+    "forbidden_injuries": [],
+    "levels": {"beginner": {"rep":15,"serie":2,"repos":45},"intermediate": {"rep":20,"serie":3,"repos":45},"advanced": {"rep":25,"serie":3,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "hip_circle",
+    "name": "Rotations hanches",
+    "muscle_group": "Fessiers",
+    "equipment": "none",
+    "programs": ["yoga_mobility_balance","low_impact_active_recovery","gentle_mobility_walk","cardiac_rehab_walking","mixed_health_maintenance"],
+    "forbidden_injuries": [],
+    "levels": {"beginner": {"rep":10,"serie":2,"repos":30},"intermediate": {"rep":15,"serie":2,"repos":30},"advanced": {"rep":20,"serie":2,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":1.0,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.0}}
+  },
+  {
+    "id": "donkey_kick",
+    "name": "Donkey kicks",
+    "muscle_group": "Fessiers",
+    "equipment": "none",
+    "programs": ["bodyweight_lower_focus","low_impact_active_recovery","mixed_health_maintenance"],
+    "forbidden_injuries": ["wrist_severe","shoulder_severe"],
+    "levels": {"beginner": {"rep":12,"serie":2,"repos":45},"intermediate": {"rep":15,"serie":3,"repos":45},"advanced": {"rep":20,"serie":3,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.8,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "rdl",
+    "name": "Soulevé de terre jambes tendues",
+    "muscle_group": "Ischio-jambiers",
+    "equipment": "dumbbells",
+    "programs": ["dumbbell_hypertrophy","lower_body_strength_gym","ppl_split_gym"],
+    "forbidden_injuries": ["back_moderate","back_severe","knee_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":90},"intermediate": {"rep":10,"serie":4,"repos":90},"advanced": {"rep":10,"serie":4,"repos":75}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.1,"serie_mult":1.2}}
+  },
+  {
+    "id": "leg_curl",
+    "name": "Leg curl couché",
+    "muscle_group": "Ischio-jambiers",
+    "equipment": "gym",
+    "programs": ["ppl_split_gym","lower_body_strength_gym","full_body_strength_gym"],
+    "forbidden_injuries": ["knee_severe"],
+    "levels": {"beginner": {"rep":12,"serie":3,"repos":75},"intermediate": {"rep":12,"serie":4,"repos":75},"advanced": {"rep":15,"serie":4,"repos":60}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "nordic_curl",
+    "name": "Curl nordique",
+    "muscle_group": "Ischio-jambiers",
+    "equipment": "none",
+    "programs": ["bodyweight_lower_focus","lower_body_strength_gym","run_walk_progression"],
+    "forbidden_injuries": ["knee_moderate","knee_severe","ankle_severe"],
+    "levels": {"beginner": {"rep":5,"serie":2,"repos":90},"intermediate": {"rep":8,"serie":3,"repos":90},"advanced": {"rep":10,"serie":4,"repos":75}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "calf_raise",
+    "name": "Mollets debout",
+    "muscle_group": "Mollets",
+    "equipment": "none",
+    "programs": ["bodyweight_lower_focus","bodyweight_strength","mixed_health_maintenance","run_walk_progression","cardio_endurance_intervals"],
+    "forbidden_injuries": ["ankle_severe"],
+    "levels": {"beginner": {"rep":20,"serie":3,"repos":45},"intermediate": {"rep":25,"serie":3,"repos":45},"advanced": {"rep":30,"serie":4,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "seated_calf_raise",
+    "name": "Mollets assis (machine)",
+    "muscle_group": "Mollets",
+    "equipment": "gym",
+    "programs": ["lower_body_strength_gym","ppl_split_gym","mixed_health_maintenance"],
+    "forbidden_injuries": ["ankle_severe"],
+    "levels": {"beginner": {"rep":15,"serie":3,"repos":45},"intermediate": {"rep":20,"serie":3,"repos":45},"advanced": {"rep":25,"serie":4,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "crunch",
+    "name": "Crunchs",
+    "muscle_group": "Abdominaux",
+    "equipment": "none",
+    "programs": ["bodyweight_strength","hiit_fat_loss","mixed_health_maintenance","cardio_fat_burn","upper_cardio_circuit"],
+    "forbidden_injuries": ["back_moderate","back_severe"],
+    "levels": {"beginner": {"rep":15,"serie":3,"repos":45},"intermediate": {"rep":20,"serie":3,"repos":45},"advanced": {"rep":30,"serie":4,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "plank",
+    "name": "Gainage planche",
+    "muscle_group": "Abdominaux",
+    "equipment": "none",
+    "programs": ["bodyweight_strength","bodyweight_upper_focus","mixed_health_maintenance","hiit_fat_loss","low_impact_active_recovery","run_walk_progression"],
+    "forbidden_injuries": ["back_severe","wrist_moderate","wrist_severe","shoulder_severe"],
+    "levels": {"beginner": {"rep":20,"serie":3,"repos":45},"intermediate": {"rep":40,"serie":3,"repos":45},"advanced": {"rep":60,"serie":4,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "leg_raise",
+    "name": "Relevés de jambes",
+    "muscle_group": "Abdominaux",
+    "equipment": "none",
+    "programs": ["bodyweight_strength","hiit_fat_loss","cardio_fat_burn","upper_cardio_circuit"],
+    "forbidden_injuries": ["back_severe","knee_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":45},"intermediate": {"rep":15,"serie":3,"repos":45},"advanced": {"rep":20,"serie":4,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "russian_twist",
+    "name": "Rotations russes",
+    "muscle_group": "Abdominaux",
+    "equipment": "none",
+    "programs": ["bodyweight_strength","hiit_fat_loss","mixed_health_maintenance","cardio_fat_burn"],
+    "forbidden_injuries": ["back_moderate","back_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":45},"intermediate": {"rep":15,"serie":3,"repos":45},"advanced": {"rep":20,"serie":4,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "mountain_climber",
+    "name": "Mountain climbers",
+    "muscle_group": "Abdominaux",
+    "equipment": "none",
+    "programs": ["hiit_fat_loss","cardio_fat_burn","cardio_endurance_intervals","upper_cardio_circuit"],
+    "forbidden_injuries": ["wrist_moderate","wrist_severe","shoulder_severe","knee_severe"],
+    "levels": {"beginner": {"rep":20,"serie":3,"repos":60},"intermediate": {"rep":30,"serie":3,"repos":45},"advanced": {"rep":40,"serie":4,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "side_plank",
+    "name": "Gainage latéral",
+    "muscle_group": "Abdominaux",
+    "equipment": "none",
+    "programs": ["bodyweight_strength","bodyweight_upper_focus","mixed_health_maintenance","low_impact_active_recovery"],
+    "forbidden_injuries": ["shoulder_moderate","shoulder_severe","wrist_moderate","wrist_severe"],
+    "levels": {"beginner": {"rep":20,"serie":2,"repos":45},"intermediate": {"rep":35,"serie":3,"repos":45},"advanced": {"rep":45,"serie":3,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":0.8},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.2}}
+  },
+  {
+    "id": "bicycle_crunch",
+    "name": "Crunchs vélo",
+    "muscle_group": "Abdominaux",
+    "equipment": "none",
+    "programs": ["hiit_fat_loss","cardio_fat_burn","bodyweight_strength"],
+    "forbidden_injuries": ["back_moderate","back_severe","neck_severe"],
+    "levels": {"beginner": {"rep":15,"serie":3,"repos":45},"intermediate": {"rep":20,"serie":3,"repos":45},"advanced": {"rep":30,"serie":4,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "burpee",
+    "name": "Burpees",
+    "muscle_group": "Full body",
+    "equipment": "none",
+    "programs": ["hiit_fat_loss","cardio_fat_burn","cardio_endurance_intervals"],
+    "forbidden_injuries": ["knee_moderate","knee_severe","wrist_moderate","wrist_severe","shoulder_severe","back_severe"],
+    "levels": {"beginner": {"rep":8,"serie":3,"repos":90},"intermediate": {"rep":12,"serie":4,"repos":60},"advanced": {"rep":15,"serie":5,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.5,"serie_mult":0.6},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "jumping_jack",
+    "name": "Jumping jacks",
+    "muscle_group": "Full body",
+    "equipment": "none",
+    "programs": ["hiit_fat_loss","cardio_fat_burn","cardio_endurance_intervals","upper_cardio_circuit","mixed_health_maintenance"],
+    "forbidden_injuries": ["knee_severe","ankle_severe","shoulder_severe"],
+    "levels": {"beginner": {"rep":20,"serie":3,"repos":60},"intermediate": {"rep":30,"serie":3,"repos":45},"advanced": {"rep":40,"serie":4,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "high_knees",
+    "name": "Montées de genoux",
+    "muscle_group": "Full body",
+    "equipment": "none",
+    "programs": ["hiit_fat_loss","cardio_fat_burn","cardio_endurance_intervals","run_walk_progression"],
+    "forbidden_injuries": ["knee_severe","ankle_severe","back_severe"],
+    "levels": {"beginner": {"rep":20,"serie":3,"repos":60},"intermediate": {"rep":30,"serie":3,"repos":45},"advanced": {"rep":40,"serie":4,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "kettlebell_swing",
+    "name": "Kettlebell swing",
+    "muscle_group": "Full body",
+    "equipment": "gym",
+    "programs": ["hiit_fat_loss","strength_cardio_hybrid","cardio_fat_burn","cardio_endurance_intervals"],
+    "forbidden_injuries": ["back_moderate","back_severe","wrist_moderate","wrist_severe","shoulder_severe"],
+    "levels": {"beginner": {"rep":10,"serie":3,"repos":75},"intermediate": {"rep":15,"serie":4,"repos":60},"advanced": {"rep":20,"serie":4,"repos":45}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "rowing_machine",
+    "name": "Rameur",
+    "muscle_group": "Full body",
+    "equipment": "gym",
+    "programs": ["cardio_endurance_intervals","upper_body_endurance_rowing","cardio_fat_burn","strength_cardio_hybrid"],
+    "forbidden_injuries": ["back_severe","wrist_severe"],
+    "levels": {"beginner": {"rep":300,"serie":1,"repos":0},"intermediate": {"rep":500,"serie":1,"repos":0},"advanced": {"rep":1000,"serie":1,"repos":0}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.5,"serie_mult":1.0}}
+  },
+  {
+    "id": "walking",
+    "name": "Marche active",
+    "muscle_group": "Full body",
+    "equipment": "none",
+    "programs": ["gentle_mobility_walk","cardiac_rehab_walking","mixed_health_maintenance","low_impact_active_recovery","run_walk_progression"],
+    "forbidden_injuries": [],
+    "levels": {"beginner": {"rep":1200,"serie":1,"repos":0},"intermediate": {"rep":2000,"serie":1,"repos":0},"advanced": {"rep":3000,"serie":1,"repos":0}},
+    "intensity_modifier": {"low":{"rep_mult":0.7,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.5,"serie_mult":1.0}}
+  },
+  {
+    "id": "run_walk_interval",
+    "name": "Intervalles marche/course",
+    "muscle_group": "Full body",
+    "equipment": "none",
+    "programs": ["run_walk_progression","cardio_endurance_intervals","cardio_fat_burn"],
+    "forbidden_injuries": ["knee_severe","ankle_severe","back_severe"],
+    "levels": {"beginner": {"rep":800,"serie":1,"repos":0},"intermediate": {"rep":1500,"serie":1,"repos":0},"advanced": {"rep":3000,"serie":1,"repos":0}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.5,"serie_mult":1.0}}
+  },
+  {
+    "id": "stationary_bike",
+    "name": "Vélo d'appartement",
+    "muscle_group": "Full body",
+    "equipment": "gym",
+    "programs": ["cardio_endurance_intervals","cardio_fat_burn","cardiac_rehab_walking","low_impact_active_recovery"],
+    "forbidden_injuries": ["knee_severe"],
+    "levels": {"beginner": {"rep":600,"serie":1,"repos":0},"intermediate": {"rep":1200,"serie":1,"repos":0},"advanced": {"rep":2000,"serie":1,"repos":0}},
+    "intensity_modifier": {"low":{"rep_mult":0.6,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.5,"serie_mult":1.0}}
+  },
+  {
+    "id": "jump_rope",
+    "name": "Corde à sauter",
+    "muscle_group": "Full body",
+    "equipment": "none",
+    "programs": ["hiit_fat_loss","cardio_fat_burn","cardio_endurance_intervals"],
+    "forbidden_injuries": ["knee_moderate","knee_severe","ankle_moderate","ankle_severe","shoulder_severe"],
+    "levels": {"beginner": {"rep":30,"serie":3,"repos":60},"intermediate": {"rep":60,"serie":4,"repos":45},"advanced": {"rep":100,"serie":5,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.5,"serie_mult":0.7},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.3,"serie_mult":1.2}}
+  },
+  {
+    "id": "cat_cow",
+    "name": "Chat-vache (mobilité dos)",
+    "muscle_group": "Dos",
+    "equipment": "none",
+    "programs": ["yoga_mobility_balance","low_impact_active_recovery","gentle_mobility_walk","cardiac_rehab_walking","mixed_health_maintenance"],
+    "forbidden_injuries": [],
+    "levels": {"beginner": {"rep":10,"serie":2,"repos":30},"intermediate": {"rep":15,"serie":2,"repos":30},"advanced": {"rep":20,"serie":3,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":1.0,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.0}}
+  },
+  {
+    "id": "bird_dog",
+    "name": "Bird dog (gainage)",
+    "muscle_group": "Dos",
+    "equipment": "none",
+    "programs": ["yoga_mobility_balance","low_impact_active_recovery","mixed_health_maintenance","gentle_mobility_walk"],
+    "forbidden_injuries": ["wrist_severe","shoulder_severe"],
+    "levels": {"beginner": {"rep":8,"serie":2,"repos":45},"intermediate": {"rep":12,"serie":3,"repos":45},"advanced": {"rep":15,"serie":3,"repos":30}},
+    "intensity_modifier": {"low":{"rep_mult":0.8,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.2,"serie_mult":1.0}}
+  },
+  {
+    "id": "child_pose",
+    "name": "Posture de l'enfant (étirement)",
+    "muscle_group": "Dos",
+    "equipment": "none",
+    "programs": ["yoga_mobility_balance","low_impact_active_recovery","gentle_mobility_walk"],
+    "forbidden_injuries": ["knee_severe"],
+    "levels": {"beginner": {"rep":30,"serie":2,"repos":0},"intermediate": {"rep":45,"serie":2,"repos":0},"advanced": {"rep":60,"serie":3,"repos":0}},
+    "intensity_modifier": {"low":{"rep_mult":1.0,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.0}}
+  },
+  {
+    "id": "downward_dog",
+    "name": "Chien tête en bas",
+    "muscle_group": "Full body",
+    "equipment": "none",
+    "programs": ["yoga_mobility_balance","low_impact_active_recovery"],
+    "forbidden_injuries": ["wrist_moderate","wrist_severe","shoulder_severe"],
+    "levels": {"beginner": {"rep":20,"serie":2,"repos":15},"intermediate": {"rep":30,"serie":3,"repos":15},"advanced": {"rep":45,"serie":3,"repos":10}},
+    "intensity_modifier": {"low":{"rep_mult":1.0,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.0}}
+  },
+  {
+    "id": "warrior_pose",
+    "name": "Posture du guerrier",
+    "muscle_group": "Full body",
+    "equipment": "none",
+    "programs": ["yoga_mobility_balance"],
+    "forbidden_injuries": ["knee_severe","ankle_severe"],
+    "levels": {"beginner": {"rep":20,"serie":2,"repos":15},"intermediate": {"rep":30,"serie":3,"repos":15},"advanced": {"rep":45,"serie":3,"repos":10}},
+    "intensity_modifier": {"low":{"rep_mult":1.0,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.0}}
+  },
+  {
+    "id": "hip_flexor_stretch",
+    "name": "Étirement fléchisseurs hanches",
+    "muscle_group": "Fessiers",
+    "equipment": "none",
+    "programs": ["yoga_mobility_balance","low_impact_active_recovery","gentle_mobility_walk","run_walk_progression"],
+    "forbidden_injuries": ["knee_severe"],
+    "levels": {"beginner": {"rep":20,"serie":2,"repos":0},"intermediate": {"rep":30,"serie":2,"repos":0},"advanced": {"rep":45,"serie":3,"repos":0}},
+    "intensity_modifier": {"low":{"rep_mult":1.0,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.0}}
+  },
+  {
+    "id": "shoulder_mobility",
+    "name": "Mobilité épaules (cercles)",
+    "muscle_group": "Épaules",
+    "equipment": "none",
+    "programs": ["yoga_mobility_balance","low_impact_active_recovery","gentle_mobility_walk","cardiac_rehab_walking"],
+    "forbidden_injuries": [],
+    "levels": {"beginner": {"rep":10,"serie":2,"repos":15},"intermediate": {"rep":15,"serie":2,"repos":15},"advanced": {"rep":20,"serie":3,"repos":10}},
+    "intensity_modifier": {"low":{"rep_mult":1.0,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.0}}
+  },
+  {
+    "id": "ankle_mobility",
+    "name": "Mobilité chevilles",
+    "muscle_group": "Mollets",
+    "equipment": "none",
+    "programs": ["yoga_mobility_balance","low_impact_active_recovery","gentle_mobility_walk","cardiac_rehab_walking","run_walk_progression"],
+    "forbidden_injuries": [],
+    "levels": {"beginner": {"rep":10,"serie":2,"repos":0},"intermediate": {"rep":15,"serie":2,"repos":0},"advanced": {"rep":20,"serie":3,"repos":0}},
+    "intensity_modifier": {"low":{"rep_mult":1.0,"serie_mult":1.0},"moderate":{"rep_mult":1.0,"serie_mult":1.0},"high":{"rep_mult":1.0,"serie_mult":1.0}}
+  }
+]
