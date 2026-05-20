@@ -7,4 +7,5 @@ router = APIRouter()
 
 @router.post("/predict", response_model=PredictionResponse)
 async def predict(input_data: WorkoutInput):
+    print(input_data)
     return await PredictionController.predict(input_data)
