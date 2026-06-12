@@ -8,4 +8,4 @@ if [ "${RUN_TESTS_ON_STARTUP:-1}" = "1" ]; then
   pytest --cov=services --cov-report=term-missing
 fi
 
-exec uvicorn main:app --host 0.0.0.0 --port 8001
+exec opentelemetry-instrument uvicorn main:app --host 0.0.0.0 --port 8001
