@@ -2,6 +2,7 @@ import logging
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 import uvicorn
+from prometheus_fastapi_instrumentator import Instrumentator
 
 from routes.prediction import router
 from services.model_service import ModelService
@@ -49,6 +50,7 @@ app = FastAPI(
 
 app.include_router(router)
 
+Instrumentator().instrument(app).expose(app) 
 
 @app.get("/health", tags=["System"], summary="Health check")
 async def health_check():
