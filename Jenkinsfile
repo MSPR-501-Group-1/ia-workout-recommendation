@@ -31,7 +31,7 @@ pipeline {
             steps {
                 sh '''
                     . .venv/bin/activate
-                    pytest tests/ \
+                    PYTHONPATH=. pytest tests/ \
                         --cov=. \
                         --cov-report=xml:coverage.xml \
                         --cov-report=term-missing \
