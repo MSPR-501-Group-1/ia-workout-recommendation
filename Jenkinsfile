@@ -50,16 +50,22 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    sh '''
-                        sonar-scanner \
-                            -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
-                            -Dsonar.sources=. \
-                            -Dsonar.inclusions="**/*.py" \
-                            -Dsonar.exclusions="**/.venv/**,**/tests/**,**/scripts/**" \
-                            -Dsonar.tests=tests \
-                            -Dsonar.python.coverage.reportPaths=coverage.xml \
-                            -Dsonar.python.version=${PYTHON_VERSION}
-                    '''
+                    withEnv(["SONAR_SCANNER_OPTS=-Xmx512m"]) {
+                        tool name: 'SonarQube Scanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+                        script {
+                            def scannerHome = tool 'SonarQube Scanner'
+                            sh """
+                                ${scannerHome}/bin/sonar-scanner \
+                                    -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
+                                    -Dsonar.sources=. \
+                                    -Dsonar.inclusions="**/*.py" \
+                                    -Dsonar.exclusions="**/.venv/**,**/tests/**,**/scripts/**" \
+                                    -Dsonar.tests=tests \
+                                    -Dsonar.python.coverage.reportPaths=coverage.xml \
+                                    -Dsonar.python.version=${PYTHON_VERSION}
+                            """
+                        }
+                    }
                 }
             }
         }
