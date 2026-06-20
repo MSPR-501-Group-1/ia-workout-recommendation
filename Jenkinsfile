@@ -93,7 +93,7 @@ pipeline {
             echo "Pipeline ia-workout-recommendation : FAILURE (build #${BUILD_NUMBER})"
         }
         always {
-            cleanWs()
+            deleteDir()
         }
     }
 }
