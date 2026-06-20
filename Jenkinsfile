@@ -31,10 +31,12 @@ pipeline {
             steps {
                 sh '''
                     . .venv/bin/activate
+                    mkdir -p test-results
                     PYTHONPATH=. pytest tests/ \
                         --cov=. \
                         --cov-report=xml:coverage.xml \
                         --cov-report=term-missing \
+                        --junitxml=test-results/results.xml \
                         -v
                 '''
             }
